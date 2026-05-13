@@ -21,7 +21,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aamina-shaik)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shaikaamina947@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aamina-shaik)
-[![Portfolio](https://img.shields.io/badge/Portfolio-%23f4a7b9.svg?style=for-the-badge&logo=vercel&logoColor=white)](#)
+[![Portfolio](https://img.shields.io/badge/Portfolio-%23f4a7b9.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://aamina-shaik.github.io/Portfolio/)
 
 </div>
 
