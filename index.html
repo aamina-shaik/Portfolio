@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="pink">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aamina Shaik — Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- SKILL POPUP OVERLAY -->
+  <div class="skill-popup-overlay" id="skillOverlay" role="dialog" aria-modal="true" aria-labelledby="popupName">
+    <div class="skill-popup" id="skillPopup">
+      <button class="popup-close" id="popupClose" aria-label="Close">✕</button>
+      <div class="popup-tag-label" id="popupCategory">Language</div>
+      <div class="popup-name" id="popupName">Python</div>
+      <div class="popup-divider"></div>
+      <p class="popup-desc" id="popupDesc">Description goes here.</p>
+      <p class="popup-used"><span id="popupUsed">Project A</span></p>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">Aamina Shaik</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="theme-switcher">
+      <button class="theme-btn" id="themeBtn" aria-label="Switch theme">
+        <span class="theme-dot" id="themeDot"></span>
+        <span id="themeLabel">Pink</span>
+        <span style="opacity:0.45;font-size:0.47rem;margin-left:2px;">▼</span>
+      </button>
+      <div class="theme-dropdown" id="themeDropdown">
+        <button class="theme-option active" data-theme="pink"><span class="theme-swatch"
+            style="background:#e8879a"></span>Pink</button>
+        <button class="theme-option" data-theme="mint"><span class="theme-swatch" style="background:#4caf82"></span>Mint
+          Cream</button>
+        <button class="theme-option" data-theme="linen"><span class="theme-swatch"
+            style="background:#c09060"></span>Soft Linen</button>
+        <button class="theme-option" data-theme="ash"><span class="theme-swatch" style="background:#7878a8"></span>Ash
+          Grey</button>
+        <button class="theme-option" data-theme="rouge"><span class="theme-swatch"
+            style="background:#d46060"></span>Petal Rouge</button>
+        <button class="theme-option" data-theme="brown"><span class="theme-swatch"
+            style="background:#bf5a30"></span>Reddish Brown</button>
+        <button class="theme-option" data-theme="noir"><span class="theme-swatch" style="background:#9b8fff"></span>Noir
+          Dark</button>
+      </div>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#experience" class="mob-link">Experience</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+    <p class="mobile-theme-label">Choose Theme</p>
+    <div class="mobile-theme-grid">
+      <button class="mobile-theme-opt active" data-theme="pink"><span class="theme-swatch"
+          style="background:#e8879a"></span>Pink</button>
+      <button class="mobile-theme-opt" data-theme="mint"><span class="theme-swatch"
+          style="background:#4caf82"></span>Mint</button>
+      <button class="mobile-theme-opt" data-theme="linen"><span class="theme-swatch"
+          style="background:#c09060"></span>Linen</button>
+      <button class="mobile-theme-opt" data-theme="ash"><span class="theme-swatch" style="background:#7878a8"></span>Ash
+        Grey</button>
+      <button class="mobile-theme-opt" data-theme="rouge"><span class="theme-swatch"
+          style="background:#d46060"></span>Petal Rouge</button>
+      <button class="mobile-theme-opt" data-theme="brown"><span class="theme-swatch"
+          style="background:#bf5a30"></span>Reddish</button>
+      <button class="mobile-theme-opt" data-theme="noir"><span class="theme-swatch"
+          style="background:#9b8fff"></span>Noir Dark</button>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <p class="eyebrow">B.Tech CSE · Class of 2026</p>
+      <h1 class="hero-title">full<br>stack<br><em>developer</em></h1>
+      <p class="hero-sub">Building responsive, scalable web applications with Python, React, and a love for clean code.
+        Passionate about AI-powered products and meaningful user experiences.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Work</a>
+        <a href="#contact" class="btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-right">
+
+      <!-- Eyebrow strip -->
+      <div class="hr-ed">
+        <div class="hr-eyebrow-strip">
+          <span class="hr-pill">Portfolio</span>
+          <div class="hr-divline"></div>
+          <span class="hr-ed-year">2026</span>
+        </div>
+
+        <!-- Giant stacked name -->
+        <div class="hr-centre">
+          <div>
+            <span class="hr-fname">Aamina</span>
+            <span class="hr-lname">Shaik</span>
+          </div>
+
+          <!-- Hairline rule -->
+          <div class="hr-trule">
+            <div class="hr-trule-long"></div>
+            <div class="hr-trule-dot"></div>
+            <div class="hr-trule-accent"></div>
+            <div class="hr-trule-short"></div>
+          </div>
+
+          <!-- Descriptor tags -->
+          <div class="hr-tags">
+            <span class="hr-tag filled">Full Stack Dev</span>
+            <span class="hr-tag">Python · React</span>
+            <span class="hr-tag">AI Enthusiast</span>
+            <span class="hr-tag">CSE · 2026</span>
+          </div>
+        </div>
+
+        <!-- Bottom metadata strip -->
+        <div class="hr-meta">
+          <div class="hr-meta-item">
+            <div class="hr-meta-label">Based in</div>
+            <div class="hr-meta-value">Andhra Pradesh, India</div>
+          </div>
+          <div class="hr-meta-item">
+            <div class="hr-meta-label">Seeking</div>
+            <div class="hr-meta-value">Internships & Jobs</div>
+          </div>
+          <div class="hr-meta-item">
+            <div class="hr-meta-label">Stack</div>
+            <div class="hr-meta-value">Flask · MongoDB</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right aside column -->
+      <div class="hr-aside-col">
+        <span class="hr-aside-deco">✦</span>
+        <span class="hr-aside-vert">full stack developer</span>
+        <span class="hr-aside-deco">◇</span>
+      </div>
+
+      <!-- Floating ornament squares -->
+      <div class="hr-ornament hr-ornament-a"></div>
+      <div class="hr-ornament hr-ornament-b"></div>
+
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div><span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-item">Python Full Stack <span class="marquee-dot"></span></div>
+      <div class="marquee-item">React.js & Flask <span class="marquee-dot"></span></div>
+      <div class="marquee-item">MongoDB & MySQL <span class="marquee-dot"></span></div>
+      <div class="marquee-item">REST APIs <span class="marquee-dot"></span></div>
+      <div class="marquee-item">AI-Powered Apps <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Python Full Stack <span class="marquee-dot"></span></div>
+      <div class="marquee-item">React.js & Flask <span class="marquee-dot"></span></div>
+      <div class="marquee-item">MongoDB & MySQL <span class="marquee-dot"></span></div>
+      <div class="marquee-item">REST APIs <span class="marquee-dot"></span></div>
+      <div class="marquee-item">AI-Powered Apps <span class="marquee-dot"></span></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div style="position:relative;z-index:1;">
+      <span class="section-eyebrow">Who I am</span>
+      <h2 class="section-heading">Building things<br>that <em>matter</em></h2>
+      <p class="about-body">I'm a final-year Computer Science student at QIS College of Engineering and Technology,
+        passionate about crafting full-stack web experiences that are both intelligent and intuitive.I enjoy solving real problems with elegant
+        code.<br><br>Currently exploring open-source contributions and deepening my AI/ML foundations, with a side
+        interest in Japanese language learning.</p>
+    </div>
+    <div class="about-right"
+      style="position:relative;z-index:1;display:flex;flex-direction:column;justify-content:center;gap:2.2rem;">
+      <div style="border-left:3px solid var(--accent);padding-left:1.5rem;">
+        <p
+          style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.1rem,2vw,1.55rem);font-weight:300;color:var(--ink);line-height:1.6;transition:color 0.45s;">
+          " Trying to become a better developer by building real projects consistently "</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:1rem;">
+        <div
+          style="display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem;border:1px solid var(--border);background:var(--card-bg);transition:border-color 0.45s,background 0.45s;">
+          <span style="font-size:1.1rem;color:var(--accent2);">◈</span>
+          <div>
+            <div
+              style="font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-bottom:0.18rem;">
+              Currently</div>
+            <div style="font-size:0.8rem;color:var(--soft);">Improving problem-solving &amp; full-stack development skills</div>
+          </div>
+        </div>
+        <div
+          style="display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem;border:1px solid var(--border);background:var(--card-bg);transition:border-color 0.45s,background 0.45s;">
+          <span style="font-size:1.1rem;color:var(--accent2);">◈</span>
+          <div>
+            <div
+              style="font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-bottom:0.18rem;">
+              Learning</div>
+            <div style="font-size:0.8rem;color:var(--soft);">Japanese language &amp; advanced system design</div>
+          </div>
+        </div>
+        <div
+          style="display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem;border:1px solid var(--border);background:var(--card-bg);transition:border-color 0.45s,background 0.45s;">
+          <span style="font-size:1.1rem;color:var(--accent2);">◈</span>
+          <div>
+            <div
+              style="font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-bottom:0.18rem;">
+              Seeking</div>
+            <div style="font-size:0.8rem;color:var(--soft);">Internship &amp; Job opportunities</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section" id="skills">
+    <span class="section-eyebrow">What I work with</span>
+    <h2 class="section-heading">Technical <em>skills</em></h2>
+    <span class="skill-hint">↑ Click any skill to learn more</span>
+    <div class="skills-grid">
+
+      <div class="skill-group">
+        <div class="skill-group-title">Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag" data-skill="Python">Python</span>
+          <span class="skill-tag" data-skill="JavaScript">JavaScript</span>
+          <span class="skill-tag" data-skill="SQL">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-group" style="transition-delay:0.1s">
+        <div class="skill-group-title">Frontend</div>
+        <div class="skill-tags">
+          <span class="skill-tag" data-skill="React.js">React.js</span>
+          <span class="skill-tag" data-skill="HTML5">HTML5</span>
+          <span class="skill-tag" data-skill="CSS3">CSS3</span>
+          <span class="skill-tag" data-skill="Responsive Design">Responsive Design</span>
+        </div>
+      </div>
+
+      <div class="skill-group" style="transition-delay:0.2s">
+        <div class="skill-group-title">Backend</div>
+        <div class="skill-tags">
+          <span class="skill-tag" data-skill="Flask">Flask</span>
+          <span class="skill-tag" data-skill="REST APIs">REST APIs</span>
+          <span class="skill-tag" data-skill="CRUD">CRUD</span>
+        </div>
+      </div>
+
+      <div class="skill-group" style="transition-delay:0.3s">
+        <div class="skill-group-title">Databases</div>
+        <div class="skill-tags">
+          <span class="skill-tag" data-skill="MongoDB">MongoDB</span>
+          <span class="skill-tag" data-skill="MySQL">MySQL</span>
+        </div>
+      </div>
+
+      <div class="skill-group" style="transition-delay:0.4s">
+        <div class="skill-group-title">Tools & Platforms</div>
+        <div class="skill-tags">
+          <span class="skill-tag" data-skill="Git">Git</span>
+          <span class="skill-tag" data-skill="GitHub">GitHub</span>
+          <span class="skill-tag" data-skill="VS Code">VS Code</span>
+          <span class="skill-tag" data-skill="Postman">Postman</span>
+        </div>
+      </div>
+
+      <div class="skill-group" style="transition-delay:0.5s">
+        <div class="skill-group-title">Concepts</div>
+        <div class="skill-tags">
+          <span class="skill-tag" data-skill="DSA">DSA</span>
+          <span class="skill-tag" data-skill="OOP">OOP</span>
+          <span class="skill-tag" data-skill="MVC">MVC</span>
+          <span class="skill-tag" data-skill="NLP">NLP</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section" id="projects">
+    <span class="section-eyebrow">Selected work</span>
+    <h2 class="section-heading">Projects I've <em>built</em></h2>
+    <div class="projects-list">
+      <div class="project-item">
+        <span class="project-num">01</span>
+        <div>
+          <h3 class="project-title">Smart Job Recommendation System</h3>
+          <div class="project-line"></div>
+          <p class="project-desc">A full-stack Flask + MongoDB platform that analyses resumes and recommends jobs based
+            on skills and experience. Includes an ATS scoring engine across 6 weighted dimensions, NLP-based skill
+            extraction against a 70+ skill taxonomy, and Gemini API integration for AI-powered mock interviews.</p>
+          <div class="project-tags"><span class="project-tag">Python Flask</span><span
+              class="project-tag">MongoDB</span><span class="project-tag">NLP</span><span class="project-tag">Gemini
+              API</span><span class="project-tag">CSRF Protection</span></div>
+        </div>
+      </div>
+      <div class="project-item">
+        <span class="project-num">02</span>
+        <div>
+          <h3 class="project-title">Interior Design Platform</h3>
+          <div class="project-line"></div>
+          <p class="project-desc">A role-based web app for showcasing and managing interior design ideas with media
+            uploads and rich user interactions. Features dual role-based authentication (Client and Customer), supports
+            4 media types, and uses 3 MongoDB collections with indexed queries for scalable performance.</p>
+          <div class="project-tags"><span class="project-tag">React.js</span><span class="project-tag">Flask</span><span
+              class="project-tag">MongoDB</span><span class="project-tag">Werkzeug</span><span class="project-tag">Full
+              Stack</span></div>
+        </div>
+      </div>
+      <div class="project-item">
+        <span class="project-num">03</span>
+        <div>
+          <h3 class="project-title">Automated Scheduling & Alerting System</h3>
+          <div class="project-line"></div>
+          <p class="project-desc">A task scheduling platform with automated alert dispatch built with Flask and MongoDB.
+            Features a responsive frontend handling task scheduling, alert triggers, and automated notifications for 3
+            alert types, with real-time trigger logic for concurrent task management and audit trail tracking.</p>
+          <div class="project-tags"><span class="project-tag">Python Flask</span><span
+              class="project-tag">MongoDB</span><span class="project-tag">JavaScript</span><span
+              class="project-tag">Real-time Logic</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience-section" id="experience">
+    <span class="section-eyebrow">Background</span>
+    <h2 class="section-heading">Experience &amp; <em>education</em></h2>
+    <div class="exp-grid">
+      <div class="exp-card">
+        <div class="exp-role">Python Full-Stack Developer Intern</div>
+        <div class="exp-org">AICTE Virtual Internship · EduSkills</div>
+        <div class="exp-date">April – June 2025 · 10-Week Certified Programme</div>
+        <ul class="exp-points">
+          <li>Developed full-stack web applications using Python, Flask, HTML, CSS, JavaScript, MySQL, and MongoDB.</li>
+          <li>Designed and implemented RESTful APIs with session-based authentication and role-based access control.
+          </li>
+          <li>Applied OOP principles, exception handling, input validation, and backend debugging.</li>
+          <li>Used Git and GitHub workflow for version control, branching, and collaborative development.</li>
+        </ul>
+      </div>
+      <div class="exp-card" style="transition-delay:0.15s">
+        <div class="exp-role">B.Tech in Computer Science & Engineering</div>
+        <div class="exp-org">QIS College of Engineering and Technology</div>
+        <div class="exp-date">2022 – 2026 · Vengamukkapalem · CGPA: 7.8/10</div>
+        <ul class="exp-points">
+          <li>Member of the CSE Technical Club, driving peer learning initiatives.</li>
+          <li>Part of the QIS-STEP Collectorate Project (2025–26), applying tech for community impact.</li>
+          <li>Strong foundation in data structures, algorithms, OOP, and full-stack development.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote-section">
+    <p class="quote-text" id="quote">People may fall into slumps, <br>but that never makes them useless</p>
+    <p class="quote-author" id="quoteAuthor">— Aamina Shaik</p>
+  </section>
+
+  <!-- CERTS -->
+  <section class="cert-section">
+    <div>
+      <span class="section-eyebrow">Credentials</span>
+      <h2 class="section-heading">Certifications &amp; <em>awards</em></h2>
+      <div class="cert-list">
+        <div class="cert-item">
+          <div class="cert-icon">✦</div>
+          <div>
+            <div class="cert-title">Python Full Stack Developer Virtual Internship</div>
+            <div class="cert-org">AICTE & EduSkills · April – June 2025</div>
+            <div class="cert-desc">10-week certified programme covering full-stack web development with Python Flask,
+              MongoDB, and REST APIs.</div>
+          </div>
+        </div>
+        <div class="cert-item" style="transition-delay:0.15s">
+          <div class="cert-icon">✦</div>
+          <div>
+            <div class="cert-title">AI for Students: Build Your Own Generative AI Model</div>
+            <div class="cert-org">NxtWave · May 2025</div>
+            <div class="cert-desc">Hands-on workshop building a working generative AI model under industry expert
+              guidance; strengthened AI and ML foundations.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="interests-wrap">
+      <span class="section-eyebrow">Beyond the code</span>
+      <h2 class="section-heading">Interests &amp; <em>activities</em></h2>
+      <div class="interest-tags">
+        <span class="interest-tag">Open-Source Contributions</span>
+        <span class="interest-tag">Language Learning</span>
+        <span class="interest-tag">Japanese (日本語)</span>
+        <span class="interest-tag">CSE Technical Club</span>
+        <span class="interest-tag">QIS-STEP Project</span>
+        <span class="interest-tag">AI & Machine Learning</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div>
+      <span class="section-eyebrow">Let's connect</span>
+      <h2 class="section-heading">Get in <em>touch</em></h2>
+      <p class="contact-desc">Open to internship & Job opportunities and conversations about building
+        something meaningful. I'd love to hear from you.</p>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:shaikaamina947@gmail.com" class="contact-link">
+        <div class="contact-link-icon">✉</div>
+        <div>
+          <div class="contact-link-label">Email</div>
+          <div class="contact-link-value">shaikaamina947@gmail.com</div>
+        </div>
+        <span class="contact-link-arrow">↗</span>
+      </a>
+      <a href="tel:+917993464472" class="contact-link" style="transition-delay:0.1s">
+        <div class="contact-link-icon">✆</div>
+        <div>
+          <div class="contact-link-label">Phone</div>
+          <div class="contact-link-value">+91 799 346 4472</div>
+        </div>
+        <span class="contact-link-arrow">↗</span>
+      </a>
+      <a href="https://linkedin.com/in/aamina-shaik" target="_blank" class="contact-link" style="transition-delay:0.2s">
+        <div class="contact-link-icon">in</div>
+        <div>
+          <div class="contact-link-label">LinkedIn</div>
+          <div class="contact-link-value">linkedin.com/in/aamina-shaik</div>
+        </div>
+        <span class="contact-link-arrow">↗</span>
+      </a>
+      <a href="https://github.com/aamina-shaik" target="_blank" class="contact-link" style="transition-delay:0.3s">
+        <div class="contact-link-icon">⌥</div>
+        <div>
+          <div class="contact-link-label">GitHub</div>
+          <div class="contact-link-value">github.com/aamina-shaik</div>
+        </div>
+        <span class="contact-link-arrow">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">Aamina Shaik</div>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p class="footer-copy">© 2025 Aamina Shaik</p>
+  </footer>
+
+  <script src="script.js"> </script>
+</body>
+
+</html>
